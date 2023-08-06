@@ -16,6 +16,7 @@ export default function PatientForm({
   handleName,
   handleAddress,
   handleNumber,
+  handleBalance,
   newPatient }) {
 
   return (
@@ -34,8 +35,7 @@ export default function PatientForm({
         width: "200px"
       }}>
         <InputGroup.Text>$</InputGroup.Text>
-        <Form.Control aria-label="Amount (to the nearest dollar)" />
-        <InputGroup.Text>.00</InputGroup.Text>
+        <Form.Control aria-label="Amount (to the nearest dollar)" type='balance' id='PatientBalance' label='Balance' value={newPatient.balance} onChange={(e) => handleBalance(e.target.value)}/>
       </InputGroup>
 
       <MDBCheckbox

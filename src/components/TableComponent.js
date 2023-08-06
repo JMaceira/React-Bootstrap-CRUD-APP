@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 
 
-export default function TableComponent({ patients, deletePatient, updatePatient, handleUpdatedName, handleUpdatedAddress, handleUpdatedNumber }) {
+export default function TableComponent({ patients, deletePatient, updatePatient, handleUpdatedName, handleUpdatedAddress, handleUpdatedNumber, handleUpdatedBalance }) {
 
   const [show, setShow] = useState(false);
 
@@ -50,11 +50,13 @@ export default function TableComponent({ patients, deletePatient, updatePatient,
 
                   <Modal show={show} onHide={handleClose}>
                     <Modal.Header closeButton>
-                      <Modal.Title>Modal heading</Modal.Title>
+                      <Modal.Title>Patient Update Info</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>   <input onChange={(e) => handleUpdatedName(e.target.value)} placeholder='Enter New Name'></input>
                     <input onChange={(e) => handleUpdatedAddress(e.target.value)} placeholder='Enter New Address'></input>
-                    <input onChange={(e) => handleUpdatedNumber(e.target.value)} placeholder='Enter New Number'></input></Modal.Body>
+                    <input onChange={(e) => handleUpdatedNumber(e.target.value)} placeholder='Enter New Number'></input>
+                    <input onChange={(e) => handleUpdatedBalance(e.target.value)} placeholder='Enter New Balance'></input>
+                    </Modal.Body>
                     <Modal.Footer>
                       <Button variant="secondary" onClick={handleClose}>
                         Close

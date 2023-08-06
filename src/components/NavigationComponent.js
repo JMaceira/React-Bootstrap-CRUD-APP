@@ -13,7 +13,7 @@ import '../App.css'
 import Home from '../routes/Home'
 import PatientsInfo from '../routes/PatientsInfo';
 import Troubleshooting from '../routes/Troubleshooting';
-import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse';
+
 
 
 export default function NavigationComponent() {

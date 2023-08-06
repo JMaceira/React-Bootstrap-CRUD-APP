@@ -32,6 +32,7 @@ export default function PatientsInfo() {
   const [updatedName, setUpdatedName] = useState('')
   const [updatedAddress, setUpdatedAddress] = useState('')
   const [UpdatedNumber, setUpdatedNumber] = useState('')
+  const [updatedBalance, setUpdatedBalance] = useState('')
 
   function handleUpdatedName(updatedNameValue) {
     setUpdatedName(updatedNameValue)
@@ -43,6 +44,10 @@ export default function PatientsInfo() {
 
   function handleUpdatedNumber(updatedNumberValue) {
     setUpdatedNumber(updatedNumberValue)
+  }
+
+  function handleUpdatedBalance(updatedBalanceValue) {
+    setUpdatedBalance(updatedBalanceValue)
   }
 
 
@@ -108,6 +113,7 @@ export default function PatientsInfo() {
     updatedPatient.name = updatedName
     updatedPatient.address = updatedAddress
     updatedPatient.number = UpdatedNumber
+    updatedPatient.balance = updatedBalance
     console.log(updatedPatient)
     console.log('Updating patient name')
     
@@ -140,7 +146,8 @@ export default function PatientsInfo() {
         updatePatient={updatePatient}
         handleUpdatedName={handleUpdatedName}
         handleUpdatedAddress={handleUpdatedAddress}
-        handleUpdatedNumber={handleUpdatedNumber} />
+        handleUpdatedNumber={handleUpdatedNumber} 
+        handleUpdatedBalance={handleUpdatedBalance}/>
      
       <hr></hr>
       
@@ -150,7 +157,8 @@ export default function PatientsInfo() {
         patients={patientList}
         handleName={handleName}
         handleAddress={handleAddress}
-        handleNumber={handleNumber} />
+        handleNumber={handleNumber} 
+        handleBalance={handleBalance}/>
 
     </div>
 
