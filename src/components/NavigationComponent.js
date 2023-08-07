@@ -1,10 +1,10 @@
 import React from 'react'
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-  } from "react-router-dom";
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -19,28 +19,28 @@ import Troubleshooting from '../routes/Troubleshooting';
 export default function NavigationComponent() {
   return (
     <Router>
-    <div>
-      
-      <Navbar bg="dark" data-bs-theme="dark">
-        <Container>
-        <Navbar.Brand href="">Sunny Smiles</Navbar.Brand>
-        <Nav className="me-auto">
-          <Nav.Link href=''>
-            <Link to="/">Home</Link>
-          </Nav.Link>
-          <Nav.Link>
-            <Link to="/Patients">Patients Info</Link>
-          </Nav.Link>
-          <Nav.Link>
-            <Link to="/Troubleshooting">Troubleshooting</Link>
-          </Nav.Link>
-          </Nav>
+      <div>
+
+        <Navbar bg="dark" data-bs-theme="dark">
+          <Container>
+            <Navbar.Brand href="">Sunny Smiles</Navbar.Brand>
+            <Nav className="me-auto">
+              <Nav.Link href=''>
+                <Link to="/">Home</Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/Patients">Patients Info</Link>
+              </Nav.Link>
+              <Nav.Link>
+                <Link to="/Troubleshooting">Troubleshooting</Link>
+              </Nav.Link>
+            </Nav>
           </Container>
-      </Navbar>
+        </Navbar>
 
 
 
-      {/*
+        {/*
         A <Switch> looks through all its children <Route>
         elements and renders the first one whose path
         matches the current URL. Use a <Switch> any time
@@ -49,18 +49,18 @@ export default function NavigationComponent() {
       */}
 
 
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/patients">
-          <PatientsInfo />
-        </Route>
-        <Route path="/troubleshooting">
-          <Troubleshooting />
-        </Route>
-      </Switch>
-    </div>
-  </Router>
-);
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/patients">
+            <PatientsInfo />
+          </Route>
+          <Route path="/troubleshooting">
+            <Troubleshooting />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
 }

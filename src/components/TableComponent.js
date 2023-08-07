@@ -42,7 +42,7 @@ export default function TableComponent({ patients, deletePatient, updatePatient,
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#/delete" ><button onClick={() =>  {deletePatient(patient.id)}}>🚮</button></Dropdown.Item>
+                <Dropdown.Item href="#/delete" ><button onClick={() => { deletePatient(patient.id) }}>🚮</button></Dropdown.Item>
                 <Dropdown.Item href="#/update" ><>
                   <Button variant="primary" onClick={handleShow}>
                     Update Patient
@@ -53,11 +53,11 @@ export default function TableComponent({ patients, deletePatient, updatePatient,
                       <Modal.Title ><h1>Patient Update Info</h1></Modal.Title>
                     </Modal.Header>
                     <Modal.Body>   <input onChange={(e) => handleUpdatedName(e.target.value)} placeholder='Enter New Name'></input>
-                    <input onChange={(e) => handleUpdatedAddress(e.target.value)} placeholder='Enter New Address'></input>
-                    <br></br>
-                    <br></br>
-                    <input onChange={(e) => handleUpdatedNumber(e.target.value)} placeholder='Enter New Number'></input>
-                    <input onChange={(e) => handleUpdatedBalance(e.target.value)} placeholder='Enter New Balance'></input>
+                      <input onChange={(e) => handleUpdatedAddress(e.target.value)} placeholder='Enter New Address'></input>
+                      <br></br>
+                      <br></br>
+                      <input onChange={(e) => handleUpdatedNumber(e.target.value)} placeholder='Enter New Number'></input>
+                      <input onChange={(e) => handleUpdatedBalance(e.target.value)} placeholder='Enter New Balance'></input>
                     </Modal.Body>
                     <Modal.Footer>
                       <Button variant="secondary" onClick={handleClose}>
@@ -66,7 +66,7 @@ export default function TableComponent({ patients, deletePatient, updatePatient,
                       <Button variant="primary" onClick={() => {
                         handleClose()
                         updatePatient(patient)
-                      } }>
+                      }}>
                         Save Changes
                       </Button>
                     </Modal.Footer>

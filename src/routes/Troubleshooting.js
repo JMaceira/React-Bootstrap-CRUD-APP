@@ -4,11 +4,11 @@ import DentalCarousel from '../components/DentalCarousel'
 export default function Troubleshooting() {
   return (
     <>
-    <br></br>
-    <h1 className='text-center'><b>Type OF Work We DO</b></h1>
-    <br></br>
+      <br></br>
+      <h1 className='text-center'><b>Type OF Work We DO</b></h1>
+      <br></br>
       <DentalCarousel />
       <br></br>
-      </>
+    </>
   )
 }

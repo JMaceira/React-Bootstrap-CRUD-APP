@@ -7,7 +7,6 @@ import {
   MDBRow,
   MDBCol,
   MDBInput,
-  MDBCheckbox,
   MDBBtn
 } from 'mdb-react-ui-kit';
 
@@ -38,13 +37,7 @@ export default function PatientForm({
         <Form.Control aria-label="Amount (to the nearest dollar)" type='balance' id='PatientBalance' label='Balance' value={newPatient.balance} onChange={(e) => handleBalance(e.target.value)}/>
       </InputGroup>
 
-      <MDBCheckbox
-        wrapperClass='d-flex justify-content-center mb-4'
-        id='NewPatientCheckBox'
-        label='Create New Patient?'
-        defaultChecked
-      />
-      <MDBBtn>Submit</MDBBtn>
+      <MDBBtn>Create New Patient</MDBBtn>
       <br></br>
     </form>
   );

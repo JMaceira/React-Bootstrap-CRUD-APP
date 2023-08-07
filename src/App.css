@@ -4,6 +4,7 @@ body {
   height: 400px;
   background-size: 100%;
 }
+
 .myPatientForm {
   display: flex;
   flex-direction: column;
@@ -18,20 +19,22 @@ body {
   align-items: center;
 }
 
-h1, h3 {
-  font-family:"Playfair Display", serif; 
+h1,
+h3 {
+  font-family: "Playfair Display", serif;
 }
 
-th, td {
+th,
+td {
   border: 1px solid black;
   padding: 1px;
   align-items: center;
 }
 
-.poster{
+.poster {
   width: 100%;
   height: auto;
-  
+
 }
 
 .card-body {
@@ -39,7 +42,7 @@ th, td {
 
 }
 
-.carousel-inner > .carousel-item > img {
-  width:640px;
-  height:360px;
+.carousel-inner>.carousel-item>img {
+  width: 640px;
+  height: 360px;
 }

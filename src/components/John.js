@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 function MeetJohn() {
     return (
-        <Card className='card-img-top img-fluid poster' id='john' style={{ width: '18em'}}>
+        <Card className='card-img-top img-fluid poster' id='john' style={{ width: '18em' }}>
             <Card.Img variant="top" src="https://as1.ftcdn.net/v2/jpg/04/34/39/76/1000_F_434397641_mAr50gTwOOAgxaNUDGSCO71Pbr8RBt0o.jpg" />
             <Card.Body>
                 <Card.Title><h3>Meet John!</h3></Card.Title>

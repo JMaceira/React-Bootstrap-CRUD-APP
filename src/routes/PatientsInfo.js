@@ -99,7 +99,7 @@ export default function PatientsInfo() {
       body: JSON.stringify(newPatient)
     }).then(() => getPatients())
 
-   
+
     setNewPatient({
       name: '',
       address: '',
@@ -109,7 +109,7 @@ export default function PatientsInfo() {
   }
 
   const updatePatient = (patient) => {
-    
+
     let updatedPatient = patient
     updatedPatient.name = updatedName
     updatedPatient.address = updatedAddress
@@ -117,7 +117,7 @@ export default function PatientsInfo() {
     updatedPatient.balance = updatedBalance
     console.log(updatedPatient)
     console.log('Updating patient name')
-    
+
     fetch(`${Patients_Api_URL}/${patient.id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
@@ -149,19 +149,19 @@ export default function PatientsInfo() {
         updatePatient={updatePatient}
         handleUpdatedName={handleUpdatedName}
         handleUpdatedAddress={handleUpdatedAddress}
-        handleUpdatedNumber={handleUpdatedNumber} 
-        handleUpdatedBalance={handleUpdatedBalance}/>
-     
+        handleUpdatedNumber={handleUpdatedNumber}
+        handleUpdatedBalance={handleUpdatedBalance} />
+
       <hr></hr>
-      
+
       <PatientForm
         newPatient={newPatient}
         postPatient={postPatient}
         patients={patientList}
         handleName={handleName}
         handleAddress={handleAddress}
-        handleNumber={handleNumber} 
-        handleBalance={handleBalance}/>
+        handleNumber={handleNumber}
+        handleBalance={handleBalance} />
 
     </div>
 
