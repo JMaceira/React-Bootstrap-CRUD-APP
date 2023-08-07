@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div>
       <br></br>
-      <h1 className='text-center'>Meet Our Dentists!</h1>
+      <h1 className='text-center'><b>Meet Our Dentists!</b></h1>
 
       <br></br>
       <br></br>

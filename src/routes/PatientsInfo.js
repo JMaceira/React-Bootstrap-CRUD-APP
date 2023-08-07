@@ -141,7 +141,7 @@ export default function PatientsInfo() {
   return (
     <div>
       <br></br>
-      <h1 className='text-center'>Patients Information</h1>
+      <h1 className='text-center'><b>Patients Information</b></h1>
 
       <TableComponent
         patients={patientList}
