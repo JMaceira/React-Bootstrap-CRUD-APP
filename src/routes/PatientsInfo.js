@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import TableComponent from '../components/TableComponent'
 import PatientForm from '../components/PatientForm'
 
+
 export default function PatientsInfo() {
   const Patients_Api_URL = 'https://6496f10083d4c69925a341bd.mockapi.io/Patients';
 
@@ -127,6 +128,7 @@ export default function PatientsInfo() {
   const deletePatient = (id) => {
     console.log(id)
     console.log('DELETING USER')
+    alert("This patient is being DELETED!")
 
     fetch(`${Patients_Api_URL}/${id}`, {
       method: 'DELETE'
@@ -138,6 +140,7 @@ export default function PatientsInfo() {
 
   return (
     <div>
+      <br></br>
       <h1 className='text-center'>Patients Information</h1>
 
       <TableComponent

@@ -21,11 +21,11 @@ export default function NavigationComponent() {
     <Router>
     <div>
       
-      <Navbar bg="primary" data-bs-theme="dark">
+      <Navbar bg="dark" data-bs-theme="dark">
         <Container>
-        <Navbar.Brand href="">Sunny Smiles NavBar</Navbar.Brand>
+        <Navbar.Brand href="">Sunny Smiles</Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link>
+          <Nav.Link href=''>
             <Link to="/">Home</Link>
           </Nav.Link>
           <Nav.Link>
