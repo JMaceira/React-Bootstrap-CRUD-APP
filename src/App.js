@@ -18,9 +18,11 @@ import Footer from './components/Footer';
 export default function App() {
 
   return (
-    <div>
-      <NavigationComponent />
-      <Footer />
+    <div id="page-container">
+      <div id="content-wrap">
+        <NavigationComponent />
+        <Footer />
+      </div>
     </div>
   )
 }

@@ -5,7 +5,7 @@ import {
 
 export default function SiteFooter() {
   return (
-    <MDBFooter className='bg-light text-center text-white '>
+    <MDBFooter className='bg-light text-center text-white ' id='footer'>
 
       <div className='text-center p-3' style={{ backgroundColor: 'black' }}>
         © 2023 John Maceira:

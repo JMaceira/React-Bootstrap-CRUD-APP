@@ -14,7 +14,7 @@ export default function OffTheCanvasLeft() {
                 More About this Dentists Specialty
             </Button>
 
-            <Offcanvas className='' show={show} onHide={handleClose}>
+            <Offcanvas className='offcanvas' show={show} onHide={handleClose}>
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title><h1 className='text-center'>General Dentist Information</h1></Offcanvas.Title>
                 </Offcanvas.Header>

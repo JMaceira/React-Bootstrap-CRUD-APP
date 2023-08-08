@@ -14,7 +14,7 @@ export default function OffTheCanvasRight() {
                 More About this Dentists Specialty
             </Button>
 
-            <Offcanvas placement='end' show={show} onHide={handleClose}>
+            <Offcanvas className='offcanvas' placement='end' show={show} onHide={handleClose}>
                 <Offcanvas.Header closeButton>
                     <Offcanvas.Title><h1 className='text-center'>An Orthodontists Information</h1></Offcanvas.Title>
                 </Offcanvas.Header>
