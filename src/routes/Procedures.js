@@ -1,7 +1,7 @@
 import React from 'react'
 import DentalCarousel from '../components/DentalCarousel'
 
-export default function Troubleshooting() {
+export default function Procedures() {
   return (
     <>
       <br></br>

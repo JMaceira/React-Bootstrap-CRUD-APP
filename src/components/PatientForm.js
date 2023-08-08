@@ -34,7 +34,7 @@ export default function PatientForm({
         width: "200px"
       }}>
         <InputGroup.Text>$</InputGroup.Text>
-        <Form.Control aria-label="Amount (to the nearest dollar)" type='balance' id='PatientBalance' label='Balance' value={newPatient.balance} onChange={(e) => handleBalance(e.target.value)}/>
+        <Form.Control aria-label="Amount (to the nearest dollar)" type='balance' id='PatientBalance' label='Balance' value={newPatient.balance} onChange={(e) => handleBalance(e.target.value)} />
       </InputGroup>
 
       <MDBBtn>Create New Patient</MDBBtn>

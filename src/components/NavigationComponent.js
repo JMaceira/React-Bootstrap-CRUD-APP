@@ -12,7 +12,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import '../App.css'
 import Home from '../routes/Home'
 import PatientsInfo from '../routes/PatientsInfo';
-import Troubleshooting from '../routes/Troubleshooting';
+import Procedures from '../routes/Procedures';
 
 
 
@@ -32,7 +32,7 @@ export default function NavigationComponent() {
                 <Link to="/Patients">Patients Info</Link>
               </Nav.Link>
               <Nav.Link>
-                <Link to="/Troubleshooting">Troubleshooting</Link>
+                <Link to="/Procedures">Procedures</Link>
               </Nav.Link>
             </Nav>
           </Container>
@@ -56,8 +56,8 @@ export default function NavigationComponent() {
           <Route path="/patients">
             <PatientsInfo />
           </Route>
-          <Route path="/troubleshooting">
-            <Troubleshooting />
+          <Route path="/procedures">
+            <Procedures />
           </Route>
         </Switch>
       </div>
