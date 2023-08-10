@@ -72,7 +72,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
  ### About Application 
 
- Screen Shot of Home Page => ![Alt text](HomePage.png)
+ `Screen Shot of Home Page => ![Alt text](HomePage.png)`
 
  Color References are 
  card-body = rgb(154, 217, 253);
