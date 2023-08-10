@@ -70,7 +70,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
- ///// About Application /////
+ ### About Application 
 
  Screen Shot of Home Page => ![Alt text](HomePage.png)
 
@@ -84,7 +84,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
  npm i bootstrap, 
  npm i react-bootstrap,
  npm i mdb-react-ui-kit.
-
- 
 
  APP can be used for dental/medical offices where the front desk admin or team can input customer/patient's information and update their statutes as well as update the patient info or delete the patient entirely.
