@@ -80,9 +80,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
  texts = black/white;
 
  App requires install of: 
- npx create-react-app,
- npm i bootstrap, 
- npm i react-bootstrap,
- npm i mdb-react-ui-kit.
+ `npx create-react-app,`
+ `npm i bootstrap, `
+` npm i react-bootstrap,`
+` npm i mdb-react-ui-kit.`
 
  APP can be used for dental/medical offices where the front desk admin or team can input customer/patient's information and update their statutes as well as update the patient info or delete the patient entirely.
